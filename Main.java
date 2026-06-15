@@ -130,7 +130,7 @@ public class Main {
 }*/
 
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -152,6 +152,17 @@ public class Main {
         System.out.println("Space: " + space);
         System.out.println("Number: " + number);
         System.out.println("Other: " + other);
+        sc.close();
+    }
+}  */
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a character: ");
+        char c = sc.next().charAt(0);
+        System.out.println("ASCII value of " + c + " is: " + (int) c);
         sc.close();
     }
 }
