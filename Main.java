@@ -72,13 +72,26 @@ public class Main {
 }
     */
 
-import java.util.Scanner;
+/* 7) import java.util.Scanner;
 public class Main {
  public static void main(String[] args) {        Scanner sc = new Scanner(System.in);
      System.out.print("Input a Decimal Number: ");
         int num = sc.nextInt();
         String octal = Integer.toOctalString(num);
         System.out.println("Octal number is: " + octal);
+        sc.close();
+    }
+}
+    */
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a binary number: ");
+        String binary = sc.next();
+        int decimal = Integer.parseInt(binary, 2);
+        System.out.println("Decimal Number: " + decimal);
         sc.close();
     }
 }
