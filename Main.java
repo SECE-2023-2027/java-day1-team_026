@@ -28,7 +28,7 @@
 
 */
 
-import java.util.Scanner;
+/* 4) import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -41,6 +41,20 @@ public class Main {
         int sum = num1 + num2;
         String result = Integer.toBinaryString(sum);
         System.out.println("Sum of two binary numbers: " + result);
+        sc.close();
+    }
+}
+    */
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a Decimal Number : ");
+        int num = sc.nextInt();
+        String binary = Integer.toBinaryString(num);
+        System.out.println("Binary number is: " + binary);
         sc.close();
     }
 }
