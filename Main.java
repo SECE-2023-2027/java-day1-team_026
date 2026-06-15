@@ -182,7 +182,7 @@ public class Main {
     }
 }*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 import java.util.Vector;
 public class Main {
     public static void main(String[] args) {
@@ -201,5 +201,26 @@ public class Main {
         System.out.println("Divisible by 3: " + div3);
         System.out.println("Divisible by 5: " + div5);
         System.out.println("Divisible by 3 and 5: " + divboth);
+    }
+}*/
+
+import java.util.Scanner;
+import java.util.Vector;
+public class Main {
+    public static void main(String[] args) {
+        int a,b,c;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input first number: ");
+        a = sc.nextInt();
+        System.out.print("Input second number: ");
+        b = sc.nextInt();
+        System.out.print("Input third number: ");
+        c = sc.nextInt();
+        if(a%10==b%10 || a%10==c%10 || b%10==c%10){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+        sc.close();
     }
 }
