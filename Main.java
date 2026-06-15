@@ -59,7 +59,7 @@ public class Main {
 }
     */
 
-import java.util.Scanner;
+/* 6)import java.util.Scanner;
 public class Main {
        public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -67,6 +67,18 @@ public class Main {
         int num = sc.nextInt();
         String hex = Integer.toHexString(num).toUpperCase();
         System.out.println("Hexadecimal number is : " + hex);
+        sc.close();
+    }
+}
+    */
+
+import java.util.Scanner;
+public class Main {
+ public static void main(String[] args) {        Scanner sc = new Scanner(System.in);
+     System.out.print("Input a Decimal Number: ");
+        int num = sc.nextInt();
+        String octal = Integer.toOctalString(num);
+        System.out.println("Octal number is: " + octal);
         sc.close();
     }
 }
