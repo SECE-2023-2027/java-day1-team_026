@@ -156,13 +156,28 @@ public class Main {
     }
 }  */
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input a character: ");
         char c = sc.next().charAt(0);
         System.out.println("ASCII value of " + c + " is: " + (int) c);
+        sc.close();
+    }
+}*/
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a Number: ");
+        int num = sc.nextInt();
+        if(num % 2 == 0) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
         sc.close();
     }
 }
