@@ -114,7 +114,7 @@ public class Main {
 }
     */
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -125,6 +125,33 @@ public class Main {
             reversed += str.charAt(i);
         }
         System.out.println("Reverse string: " + reversed);
+        sc.close();
+    }
+}*/
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a string: ");
+        String str = sc.nextLine();
+        int letter=0,space=0,number=0,other=0;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            if(str.charAt(i) == ' ') {
+                space++;
+            } else if(Character.isLetter(str.charAt(i))) {
+                letter++;
+            } else if(Character.isDigit(str.charAt(i))) {
+                number++;
+            } else {
+                other++;
+            }
+        }
+        System.out.println("Letter: " + letter);
+        System.out.println("Space: " + space);
+        System.out.println("Number: " + number);
+        System.out.println("Other: " + other);
         sc.close();
     }
 }
