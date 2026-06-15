@@ -46,8 +46,7 @@ public class Main {
 }
     */
 
-import java.util.Scanner;
-
+/*5) import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -55,6 +54,19 @@ public class Main {
         int num = sc.nextInt();
         String binary = Integer.toBinaryString(num);
         System.out.println("Binary number is: " + binary);
+        sc.close();
+    }
+}
+    */
+
+import java.util.Scanner;
+public class Main {
+       public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a decimal number: ");
+        int num = sc.nextInt();
+        String hex = Integer.toHexString(num).toUpperCase();
+        System.out.println("Hexadecimal number is : " + hex);
         sc.close();
     }
 }
