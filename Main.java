@@ -137,7 +137,7 @@ public class Main {
         System.out.print("Input a string: ");
         String str = sc.nextLine();
         int letter=0,space=0,number=0,other=0;
-        for (int i = str.length() - 1; i >= 0; i--) {
+        for (int i =str.length() - 1; i >= 0; i--) {
             if(str.charAt(i) == ' ') {
                 space++;
             } else if(Character.isLetter(str.charAt(i))) {
