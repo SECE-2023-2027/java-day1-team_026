@@ -167,7 +167,7 @@ public class Main {
     }
 }*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -179,5 +179,27 @@ public class Main {
             System.out.println(0);
         }
         sc.close();
+    }
+}*/
+
+import java.util.Scanner;
+import java.util.Vector;
+public class Main {
+    public static void main(String[] args) {
+        Vector<Integer> div3 = new Vector<>();
+        Vector<Integer> div5 = new Vector<>();
+        Vector<Integer> divboth = new Vector<>();
+        for(int i=1; i<=100; i++) {
+            if(i % 3 == 0 && i % 5 == 0) {
+                divboth.add(i);
+            } else if(i % 3 == 0) {
+                div3.add(i);
+            } else if(i % 5 == 0) {
+                div5.add(i);
+            }
+        }
+        System.out.println("Divisible by 3: " + div3);
+        System.out.println("Divisible by 5: " + div5);
+        System.out.println("Divisible by 3 and 5: " + divboth);
     }
 }
